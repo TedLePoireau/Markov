@@ -20,7 +20,9 @@ int main(int argc, char *argv[])
 		exit(3);		
 	}
 	Img *image_in = new Img(argv[1]);	
-    	return 0;
+    image_in->makeList();
+
+	return 0;
 }
 
 

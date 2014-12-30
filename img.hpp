@@ -12,6 +12,8 @@ class Img
 {
 public:
 	Img(std::string path);	
+	void makeList();
+
 	cv::Mat img;
 	std::list<pixel> pixlist;	
 };
