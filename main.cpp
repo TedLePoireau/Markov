@@ -21,10 +21,8 @@ int main(int argc, char *argv[])
 	}
 	Img *image_in = new Img(argv[1]);	
     image_in->makeList();
-
+    image_in->clusterize();
+	image_in->list_clusters();
 	return 0;
 }
-
-
-
 

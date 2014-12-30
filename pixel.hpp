@@ -1,6 +1,6 @@
 #pragma once
 
-class pixel
+class Pixel
 {
 public:
 	void print();

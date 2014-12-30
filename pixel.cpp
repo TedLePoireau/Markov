@@ -1,7 +1,9 @@
 #include "pixel.hpp"
 #include <iostream>
+#include <math.h>
 
-void pixel::print()
+
+void Pixel::print()
 {
 	std::cout << "Pixel (at x: ";
 	std::cout << x << " y:";

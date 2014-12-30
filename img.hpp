@@ -1,8 +1,10 @@
 #pragma once
 
 #include <list>
-#include "pixel.hpp"
 #include <string>
+
+#include "pixel.hpp"
+#include "cluster.hpp"
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
@@ -13,7 +15,10 @@ class Img
 public:
 	Img(std::string path);	
 	void makeList();
+	void clusterize();
+	void list_clusters();
 
 	cv::Mat img;
-	std::list<pixel> pixlist;	
+	std::list<Pixel*> pixlist;	
+	std::list<Cluster*> clusters;
 };
