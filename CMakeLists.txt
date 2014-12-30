@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
 project( Markov )
 find_package( OpenCV REQUIRED )
-add_executable( Markov main.cpp )
+add_executable( Markov main.cpp img.cpp)
 target_link_libraries( Markov ${OpenCV_LIBS} )
