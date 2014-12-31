@@ -1,6 +1,0 @@
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-cmake_minimum_required(VERSION 2.8)
-project( Markov )
-find_package( OpenCV REQUIRED )
-add_executable( Markov main.cpp img.cpp pixel.cpp cluster.cpp)
-target_link_libraries( Markov ${OpenCV_LIBS} )

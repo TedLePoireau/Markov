@@ -1,12 +1,15 @@
-Dependancies
+Dependances
 ============
+Java 8
 
-OpenCV 2.4.9
-
-Compilation
+Utilisation
 ============
+java -jar segmentation.jar image_in image_out [nb_of_class=4]
 
-mkdir build
-cd build
-cmake ../
-make
+Choix
+=====
+Java : Comme ça c'est simple pour vous et c'est rapide.
+
+Methodologie
+============
+K-means
